@@ -1,3 +1,4 @@
+import { SelectedData } from './../../interfaces/news.interface';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +10,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  public selectedData: SelectedData  = {category: "general", country: "in"};
+
   ngOnInit(): void {
+  }
+
+  fetchData(data: SelectedData) {
+    this.selectedData = data;
   }
 
 }

@@ -1,0 +1,17 @@
+
+<form [formGroup]="newsForm" class="newsForm">
+  <div class="mb-3" id="categories">
+    <label for="Select" class="form-label"></label>
+    <select class="form-select" name="category" id="" formControlName="category">
+      <option *ngFor="let cat of newsCategoriesData" [ngValue]="cat.value">{{cat.label}}</option>
+    </select>
+  </div>
+
+  <div class="mb-3" id="countries">
+    <label for="Select" class="form-label"></label>
+    <select class="form-select" name="category" id="" formControlName="country">
+      <option *ngFor="let cat of countries" [ngValue]="cat.value">{{cat.label}}</option>
+    </select>
+  </div>
+
+</form>

@@ -1,0 +1,9 @@
+#categories, #countries {
+  width: fit-content;
+  padding: 20px;
+}
+
+.newsForm {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="container" *ngIf="!showLoader && !isError">
+    <div class="news" *ngFor="let data of news?.articles">
+      <div class="card text-white bg-dark">
+        <img class="card-img-top" src="{{data.urlToImage}}" alt="{{data.author}}">
+        <div class="card-body">
+          <h4 class="card-title">{{data.title}}</h4>
+          <p class="card-text">{{data.description}}</p>
+        </div>
+        <div class="card-body">
+          <a href="{{data.url}}" class="card-link btn btn-primary" target="__blank">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="loader" *ngIf="showLoader"> </div>
+<div class="error" *ngIf="isError">
+  <h2>Sorry, Unable to load the response.</h2>
+</div>
+
