@@ -14,7 +14,11 @@
     </div>
   </div>
 </div>
-<div class="loader" *ngIf="showLoader"> </div>
+<div class="loaderDot" *ngIf="showLoader">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
 <div class="error" *ngIf="isError">
   <h2>Sorry, Unable to load the response.</h2>
 </div>

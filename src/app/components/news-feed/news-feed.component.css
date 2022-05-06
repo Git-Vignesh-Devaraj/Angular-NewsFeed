@@ -33,3 +33,32 @@
   display: flex;
   justify-content: center;
 }
+
+
+.loaderDot {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  animation: wave 0.4s ease-in infinite alternate;
+  margin-right: 10px;
+}
+
+@keyframes wave {
+  to {transform: translateY(-10px);}
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
